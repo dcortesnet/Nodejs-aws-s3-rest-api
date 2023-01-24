@@ -43,8 +43,11 @@ app.get("/api/v1/files", async (req, res) => {
 app.post("/api/v1/files", upload.single("file"), async (req, res) => {
   try {
     if (!req.file) {
-      throw new Error("Not file encountred");
+      return res.status(400).json({
+        detail: "Not file encountered"
+      });
     }
+
     const params = {
       Bucket: bucketName,
       Key: v4() + "." + req.file?.originalname.split(".").pop(),
@@ -52,6 +55,7 @@ app.post("/api/v1/files", upload.single("file"), async (req, res) => {
       ACL: "public-read",
       ContentType: req.file?.mimetype,
     };
+
     const file = await s3.upload(params).promise();
     return res.json({ message: "Successful upload", file });
   } catch (error) {
