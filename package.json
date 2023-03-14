@@ -1,5 +1,5 @@
 {
-  "name": "Nodejs-rest-api-s3",
+  "name": "Nodejs-aws-s3-rest-api",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
