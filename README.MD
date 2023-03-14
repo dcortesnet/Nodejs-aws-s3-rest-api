@@ -1,4 +1,4 @@
-# Nodejs REST API S3 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+# Nodejs AWS S3 REST API ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 API REST básica con la incorporación de AWS y nodejs, ejemplo práctico para el manejo de archivos con multer y S3.
 
