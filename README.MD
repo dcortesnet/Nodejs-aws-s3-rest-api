@@ -8,6 +8,22 @@ API REST básica con la incorporación de AWS y nodejs, ejemplo práctico para e
 - User de AWS con políticas `AmazonS3FullAccess`
 - Bucket habilitado públicamente y con lista de control de acceso
 
+## Instalación
+
+Ejecutar comando
+
+```
+npm install
+```
+
+## Desarrollo
+
+Se levantará un servidor en http://localhost:3000/
+
+```bash
+$ npm run dev
+```
+
 ## ENV variables
 
 | ENV                 | Descripción                     |
@@ -24,22 +40,6 @@ API REST básica con la incorporación de AWS y nodejs, ejemplo práctico para e
 | GET    | http://localhost:3000/api/v1/files/      |        |
 | POST   | http://localhost:3000/api/v1/files/      | file (Form-data)     |
 | DELETE | http://localhost:3000/api/v1/files/{key} |        |
-
-## Instalación
-
-Ejecutar comando
-
-```
-npm install
-```
-
-## Desarrollo
-
-Se levantará un servidor en http://localhost:3000/
-
-```bash
-$ npm run dev
-```
 
 ## Equipo
 
